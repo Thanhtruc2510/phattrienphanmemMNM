@@ -1,0 +1,19 @@
+<?php
+function compare_strings($str1, $str2) {
+    // Sử dụng toán tử == để so sánh hai chuỗi
+    if ($str1 == $str2) {
+        return "Hai chuỗi giống nhau";
+    } else {
+        return "Hai chuỗi không giống nhau";
+    }
+}
+
+// Hai chuỗi cần so sánh
+$string1 = "Chuỗi 1";
+$string2 = "Chuỗi 2";
+
+// Gọi hàm compare_strings và in ra kết quả
+echo "Chuỗi 1: " . $string1 . "\n";
+echo "Chuỗi 2: " . $string2 . "\n";
+echo compare_strings($string1, $string2);
+?>
