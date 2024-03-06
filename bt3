@@ -1,0 +1,14 @@
+<?php
+function encode_to_md5($str) {
+    // Sử dụng hàm md5 để mã hóa chuỗi
+    $encoded_str = md5($str);
+    return $encoded_str;
+}
+
+// Chuỗi cần mã hóa
+$string = "Chuỗi cần mã hóa bằng MD5";
+
+// Gọi hàm encode_to_md5 và in ra kết quả
+echo "Chuỗi gốc: " . $string . "\n";
+echo "Chuỗi sau khi mã hóa bằng MD5: " . encode_to_md5($string);
+?>
