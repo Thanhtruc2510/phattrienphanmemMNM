@@ -1,0 +1,20 @@
+<?php
+function cut_string($str, $start, $length) {
+    // Sử dụng hàm substr để cắt chuỗi từ vị trí bắt đầu và với độ dài cho trước
+    $result = substr($str, $start, $length);
+    return $result;
+}
+
+// Chuỗi cần cắt
+$string = "Đây là một chuỗi ví dụ để cắt";
+
+// Điểm bắt đầu cắt
+$start = 8;
+
+// Độ dài của chuỗi sau khi cắt
+$length = 9;
+
+// Gọi hàm cut_string và in ra kết quả
+echo "Chuỗi gốc: " . $string . "\n";
+echo "Chuỗi sau khi cắt: " . cut_string($string, $start, $length);
+?>
