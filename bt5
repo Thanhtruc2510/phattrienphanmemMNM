@@ -1,0 +1,20 @@
+<?php
+function replace_substring($string, $old_substring, $new_substring) {
+    // Sử dụng hàm str_replace để thay thế chuỗi con
+    $result = str_replace($old_substring, $new_substring, $string);
+    return $result;
+}
+
+// Chuỗi gốc
+$original_string = "This is a sample string for demonstration";
+
+// Chuỗi con cần thay thế
+$old_substring = "sample";
+
+// Chuỗi mẹ mới
+$new_substring = "replacement";
+
+// Gọi hàm replace_substring và in ra kết quả
+echo "Chuỗi gốc: " . $original_string . "\n";
+echo "Chuỗi sau khi thay thế: " . replace_substring($original_string, $old_substring, $new_substring);
+?>
