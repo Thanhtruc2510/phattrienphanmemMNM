@@ -1,0 +1,18 @@
+<?php
+function remove_extra_spaces($str) {
+    // Sử dụng hàm trim để loại bỏ các khoảng trắng ở đầu và cuối chuỗi
+    $str = trim($str);
+    
+    // Sử dụng hàm preg_replace để thay thế các khoảng trắng liên tiếp thành một khoảng trắng duy nhất
+    $str = preg_replace('/\s+/', ' ', $str);
+    
+    return $str;
+}
+
+// Chuỗi cần xử lý
+$string = "   Đây là     một chuỗi    với   khoảng trắng     thừa  ";
+
+// Gọi hàm remove_extra_spaces và in ra kết quả
+echo "Chuỗi gốc: " . $string . "\n";
+echo "Chuỗi sau khi loại bỏ khoảng trắng thừa: " . remove_extra_spaces($string);
+?>
